@@ -1,0 +1,19 @@
+DateTime.Parse ‚Å•¶š—ñ‚Ì“ú‚ğ“Ç‚İ‚İ
+
+var stime = "Tue, 07 Apr 2020 16:04:46 +0900";
+DateTime dateTime = DateTime.Parse(stime);
+var localTime = dateTime.ToLocalTime();
+Console.WriteLine(localTime.ToString());
+//2020/04/07 16:04:46
+
+var stime = "2020-04-07T16:04:46Z";
+DateTime dateTime = DateTime.Parse(stime);
+var localTime = dateTime.ToLocalTime();
+Console.WriteLine(localTime.ToString());
+//2020/04/08 1:04:46
+
+var stime = "2020-04-07T16:04:46+09:00";
+DateTime dateTime = DateTime.Parse(stime);
+var localTime = dateTime.ToLocalTime();
+Console.WriteLine(localTime.ToString());
+//2020/04/07 16:04:46
